@@ -23,6 +23,9 @@ doedit data_distribution.do
 
 [Python与Stata的数据交互](./1_Python与Stata的数据交互)
 
+### 302 Python与Stata的数据交互之时间变量
+
+[Python与Stata的数据交互之时间变量](./2_Python与Stata的数据交互_时间变量)
 
 ## 推荐关注
 
