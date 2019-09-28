@@ -52,7 +52,7 @@ clear
 
 python:
 from sfi import Data, Datetime
-import matplotlib.pyplot as plt
+import pandas as pd
 import numpy as np
 import tushare as ts
 

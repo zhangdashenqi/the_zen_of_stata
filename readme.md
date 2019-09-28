@@ -21,11 +21,11 @@ doedit data_distribution.do
 
 ### 301 Python与Stata的数据交互
 
-[Python与Stata的数据交互](./1_Python与Stata的数据交互)
+[Python与Stata的数据交互](./1_data_in_Python_and_Stata)
 
 ### 302 Python与Stata的数据交互之时间变量
 
-[Python与Stata的数据交互之时间变量](./2_Python与Stata的数据交互_时间变量)
+[Python与Stata的数据交互之时间变量](./2_datetime_in_Python_and_Stata)
 
 ## 推荐关注
 
