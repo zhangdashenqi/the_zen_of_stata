@@ -1,0 +1,10 @@
+v 0.2
+d zstata Stata之禅命令; update.
+d {bf:By zhangdashenqi @ theZenofStata.}
+d Stata之禅命令用于获取同名微信公众号上do文件代码
+d Distribution-Date: 20190927
+d
+d GitHub: https://github.com/zhangdashenqi
+d WeChat Subscription Account: Stata之禅
+
+f zstata.ado
