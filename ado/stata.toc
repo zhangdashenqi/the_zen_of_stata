@@ -1,0 +1,12 @@
+v 0.2
+
+d ^Stata之禅^
+d The Zen of Stata
+
+d Welcome to ^The Zen of Stata^ 
+d By zhangdashenqi @ theZenofStata
+d Email: zhangqingjun3@qq.com
+d GitHub: https://github.com/zhangdashenqi
+d WeChat Subscription Account: Stata之禅
+
+f zstata.ado
