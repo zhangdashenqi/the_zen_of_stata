@@ -1,0 +1,13 @@
+v 0.1
+d chars 在Stata中显示字符画; update.
+d ^By zhangdashenqi @ theZenofStata.^
+d chars命令用于在Stata中显示字符画，用法见帮助文件.
+d 
+d Distribution-Date: 20190927
+d
+d Support:
+d GitHub: https://github.com/zhangdashenqi
+d WeChat Subscription Account: Stata之禅
+
+f chars.ado
+f chars.hlp
