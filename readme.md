@@ -12,7 +12,7 @@
 您可以在Stata中使用`copy`命令将仓库中的文件复制到本地。
 如：
 
-## 安装步骤
+## 安装步骤（从github获取）
 
 ### 1.首先设定安装地址
 
@@ -31,12 +31,33 @@ net install zstata
 
 ```c
 zstata
-zstata, g  // 从gitee中获取数据
 ```
 ![zstata](zstata.png)
 
 此时，您可以自由下载、编辑相关do文档。
 
+## 安装步骤（从码云`gitee`获取）
+
+### 1.首先设定安装地址
+
+```c
+cap mkdir "`c(sysdir_plus)'z"
+global gitee https://gitee.com/zhangdashenqi/the_zen_of_stata/raw/master/ado
+```
+
+### 2.然后使用命令行工具`curl`安装Stata之禅命令：`zstata`
+
+```c
+!curl "${gitee}/zstata.ado" -o `c(sysdir_plus)'z/zstata.ado 
+```
+
+### 3.安装成功之后，在Stata命令窗口输入`zstata`即可
+
+```c
+zstata, g  // 从gitee中获取数据
+```
+
+此时，您可以自由下载、编辑相关do文档。
 
 # 更新列表
 
