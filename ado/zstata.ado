@@ -16,7 +16,6 @@ program define zstata, rclass
 	version 15.0
 	syntax [, Gitee]
 	if "`gitee'"==""{
-		dis "使用github"
 		zstata1
 	}
 	else{
