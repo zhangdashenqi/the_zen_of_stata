@@ -34,10 +34,6 @@ program define zstata, rclass
 	}
 end
 
-
-!curl -V > nul 2>nul
-
-
 cap program drop zstata1
 program define zstata1, rclass
 	dis in w _n "{c TLC}{hline 60}{c TRC}" _n ///
