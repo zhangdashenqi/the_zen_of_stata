@@ -31,6 +31,7 @@ net install zstata
 
 ```c
 zstata
+zstata, g  // 从gitee中获取数据
 ```
 ![zstata](zstata.png)
 
