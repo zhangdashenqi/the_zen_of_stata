@@ -70,6 +70,10 @@ zstata, g  // 从gitee中获取数据
 
 [Python与Stata的数据交互之时间变量](./2_datetime_in_Python_and_Stata)
 
+### 303 Stata16新功能DataFrame操作1
+
+[Stata16新功能DataFrame操作1](./3_data_frame_1)
+
 ## 推荐关注
 
 <div align=center><img src="https://raw.githubusercontent.com/zhangdashenqi/Stata-Graph/master/logo.png" width=300px /></div>
