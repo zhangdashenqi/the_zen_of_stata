@@ -74,6 +74,11 @@ zstata, g  // 从gitee中获取数据
 
 [Stata16新功能DataFrame操作1](./3_data_frame_1)
 
+### 304 Stata16新功能DataFrame操作2
+
+[Stata16新功能DataFrame操作2](./4_data_frame_2)
+
+
 ## 推荐关注
 
 <div align=center><img src="https://raw.githubusercontent.com/zhangdashenqi/Stata-Graph/master/logo.png" width=300px /></div>
