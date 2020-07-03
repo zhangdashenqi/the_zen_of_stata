@@ -10,10 +10,12 @@
 * 	  Date: Sep 27, 2019
 * 0.3 Version: repalce source form github to gitee
 *	  Date: Nov 7, 2019
+* 0.4 Version: replace raw.githubusercontent.com to raw.staticdn.net
+*     Date: Jul 3, 2020
 
 cap program drop zstata
 program define zstata, rclass
-	version 15.0
+	version 14.0
 	syntax [, Gitee]
 	if "`gitee'"==""{
 		zstata1
@@ -41,7 +43,6 @@ program define zstata1, rclass
 		 "{c BLC}{hline 60}{c BRC}"
 		 
 	_zstata1 Stata-Graph/master/do/
-	
 	_zstata1 the_zen_of_stata/master/
 	
 	dis in w "{c TLC}{hline 60}{c TRC}"
@@ -54,7 +55,8 @@ end
 
 cap program drop _zstata1
 program define _zstata1, rclass
-	local url "https://raw.githubusercontent.com/zhangdashenqi/"
+	// local url "https://raw.githubusercontent.com/zhangdashenqi/"
+	local url "https://raw.staticdn.net/zhangdashenqi/"
 	local repo `url'`1'readme.md
 	copy "`repo'" "list.txt", replace
 
@@ -66,11 +68,12 @@ program define _zstata1, rclass
 		split v, p("### ")
 		drop v
 		sxpose, clear
-		gen item = ustrregexs(1) if ustrregexm(_var1 , `"\d{3}(.+?)\n"')
+		gen item = ustrregexs(1) if ustrregexm(_var1 , `"\d{3}(.+?)(\r|\n)"')
 		gen link = ustrregexs(1) if ustrregexm(_var1 , `"]\(\./(.+?)\)"')
 		drop if item==""|link==""
 	}
-	local url "https://raw.githubusercontent.com/zhangdashenqi/"
+	// local url "https://raw.githubusercontent.com/zhangdashenqi/"
+	local url "https://raw.staticdn.net/zhangdashenqi/"
 	local dolink `url'`1'
 	local num = _N
 
@@ -120,7 +123,7 @@ program define _zstata2, rclass
 		split v, p("### ")
 		drop v
 		sxpose, clear
-		gen item = ustrregexs(1) if ustrregexm(_var1 , `"\d{3}(.+?)\n"')
+		gen item = ustrregexs(1) if ustrregexm(_var1 , `"\d{3}(.+?)(\r|\n)"')
 		gen link = ustrregexs(1) if ustrregexm(_var1 , `"]\(\./(.+?)\)"')
 		drop if item==""|link==""
 	}
